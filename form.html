@@ -34,7 +34,6 @@
 <div class="alert alert-warning">記入の足りないところがあります。</div>
 -->
 
-<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -59,7 +58,7 @@
 
         <div class="form-group">
         <label>password</label>
-        <input type="text" id ="password" name="password" class="form-control is-invalid" placeholder="password" onchange="return checkpassword();">
+        <input type="password" id ="password" name="password" class="form-control is-invalid" placeholder="password" onchange="return checkpassword();">
         <div class="invalid-feedback" id="password2">半角英数字のみ6文字以上10文字以内</div>
         </div>
   
@@ -81,10 +80,9 @@
 
     <div class ="form-group">
         <label for="tel">住所</label>  
-<!-- ▼郵便番号入力フィールド(7桁) --><!--onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');"--> 
+<!--7桁正規表現-->
 <input type="text" class="form-control is-invalid" id = "addr7" placeholder="〒" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" onchange=" return checkaddr7();">
 <div class="invalid-feedback" id="addr72">郵便番号検索できます</div>
-<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
 <input type="text" class="form-control is-invalid" id="addr11" placeholder="住所" name="addr11" size="60"  onchange="return checkaddr();">
 <div class="invalid-feedback" id="addr112">住所を入力してください</div>
 </div>
